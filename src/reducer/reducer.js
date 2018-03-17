@@ -2,7 +2,7 @@ import {createStore } from 'redux';
 
 
 const initialState = {
-  display: 'block'
+  display: 'none'
 };
 
 const reducerCounter = (state = initialState, action)=> {
@@ -11,7 +11,7 @@ const reducerCounter = (state = initialState, action)=> {
     case 'DISPLAY' : 
     console.log(state.display);
     return Object.assign({}, state, {
-        display:'none'})
+        display:'block'})
     default :
     return state;
     // console.log('yo');
