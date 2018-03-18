@@ -9,12 +9,15 @@ const reducerCounter = (state = initialState, action)=> {
 
   switch(action.type){
     case 'DISPLAY' : 
-    console.log(state.display);
+    console.log('uno');
     return Object.assign({}, state, {
         display:'block'})
+    case 'PRUEBA':
+    console.log('dos')
+    
     default :
     return state;
-    // console.log('yo');
+    console.log('yo');
   }
 }
 

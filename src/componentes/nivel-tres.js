@@ -1,9 +1,6 @@
 import React from 'react'
-import './nivel-uno.css'
+import './nivel-tres.css'
 import Circulo from '../container/circulo-container'
-// const asientos = [1,2,3,4,5,6,7,8,9,10]
-// const x = ['400','450','500','550','600','400','450','500','550','600']
-// const y = ['300','300','300','300','300','350','350','350','350','350']
 const coordernadaX = []
 const coordernadaY = []
 let inicioX = 400
@@ -22,16 +19,16 @@ for (var i =0;i<10;i++){
    }
 }
 
-const NivelUno = ({onClick1}) =>{
+const NivelTres = ({onClick}) =>{
     const row = []
    for(var j=0; j<10; j++){
     row.push(<Circulo key = {j} y={coordernadaY[j]} x ={coordernadaX[j]}/>)
    }
     return(
         <svg>
-         <rect x="200" y="90" width="400" height="150" fill="#232855" onClick={onClick1}/>
+         <rect x="100" y="400" width="600" height="180" fill="#008891" onClick={onClick}/>
          {row}
         </svg>
     )
 }
-export default NivelUno
+export default NivelTres

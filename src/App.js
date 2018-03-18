@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import NivelUno from './container/nivelUno-container'
+import NivelDos from './container/nivelDos-container'
+import NivelTres from './container/nivelTres-container'
 import Escenario from './componentes/escenario'
 // const none = 'block';
 import { Provider } from 'react-redux';
@@ -12,6 +14,9 @@ const App =() => (
   <div>
   <Escenario/>
   <NivelUno/>
+  <NivelDos/>
+  <NivelTres/>
+
   </div>
   </Provider>
 )
