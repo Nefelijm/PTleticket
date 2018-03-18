@@ -1,4 +1,4 @@
-import Cuadrado from '../componentes/cuadro'
+import NivelUno from '../componentes/nivel-uno'
 import {connect} from 'react-redux';
 import  {display} from '../acciones/accion'
 import { bindActionCreators } from 'redux';
@@ -8,4 +8,4 @@ import { bindActionCreators } from 'redux';
 
   }
 
-  export default connect(null,mapDispatchToProps)(Cuadrado)
+  export default connect(null,mapDispatchToProps)(NivelUno)
