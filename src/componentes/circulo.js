@@ -1,9 +1,14 @@
-// import React from 'react'
+import React from "react";
 
-// const Circulo =({none,y,x}) =>(
-//     <svg>
-//     <circle r="10" cx={x} cy={y} fill="#F4F4F4" display={none}/>
-//     </svg>
-// )
+const Circulo = props => {
+  return (
+    <circle
+      r="12"
+      cx={props.cx}
+      cy={props.cy}
+      fill="pink"
+    />
+  )
+};
 
-// export default Circulo
+export default Circulo;

@@ -13,6 +13,8 @@ const App =() => (
        <svg className="svg">
           <Escenario/>
           <NivelUno id={1}/>
+          <NivelUno id={2}/>
+          <NivelUno id={3}/>
        </svg> 
 
     </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import ContainerCirculo from './containerCirculo'
 
 const NivelUno = ({id}) =>{
 
