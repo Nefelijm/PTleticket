@@ -1,11 +1,6 @@
 import React from 'react'
-import './nivel-uno.css'
-
-const Escenario = () => (
-  
-<svg>
-    <rect x="275" y="10" width="250" height="80" fill="#E7E7DE"/>
- </svg>
-
+//Creamos el componente escenario
+const Escenario = () => ( 
+  <rect x="250" y="10" width="200" height="150" fill="gray"/>
 )
 export default Escenario
