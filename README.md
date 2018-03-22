@@ -48,7 +48,7 @@ considerar que los escenarios pueden tener más de 1 piso.
 ```
 
 
-2. Decicidimos que componentes seran statefull y los parametros del state que van a necesitar y las acciones que van a ralizar(Aquellos que seran componentes altos):nivelUno-container.
+2. Decicidimos que componentes seran statefull y los parametros del state que van a necesitar y las acciones que van a ralizar(Aquellos que seran componentes altos):nivelUno-container,circulo y containerCirculo
 
 ```
 const mapStateToProps = state => ({
