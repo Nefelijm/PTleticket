@@ -14,10 +14,10 @@ const Header = () => (
       </div>
       <div className="btn-group btn-group-toggle container-toggle" data-toggle="buttons">
         <label className="btn btn-secondary btn-but">
-          <input type="radio" name="options" id="option1" autocomplete="off" checked /> Inicia Sesión
+          <input type="radio" name="options" id="option1" /> Inicia Sesión
         </label>
         <label className="btn btn-secondary">
-          <input type="radio" name="options" id="option2" autocomplete="off" /> Regístrate
+          <input type="radio" name="options" id="option2"/> Regístrate
         </label>
       </div>
     </header>
