@@ -1,3 +1,4 @@
+//import {actionTypes} from './acciones/accion'
 //Crearemos nuestro estado para poder pasar a nuestras componentes
 const initialState = {
     niveles:{
@@ -18,3 +19,53 @@ const initialState = {
     selected:{}//Este estado cambiara de acuerdo a las butacas que seleccionaremos
     
     }
+
+
+
+    const reducer = (state = initialState, action) => {
+        switch(action.type) {
+            case 'DISPLAY_BUTACAS':
+        
+              return {
+                ...state,
+                niveles: {
+                  ...state.niveles,
+                  [action.payload]: {
+                    ...state.niveles[action.payload],
+                    display: 'block',
+                  },
+                }
+              };
+        
+              case 'TOGGLE_BUTACA':
+                if (state.selected[action.payload.nivel] && state.selected[action.payload.nivel][action.payload.butaca] === 'selected') {
+                  return {
+                    ...state,
+                    selected: {
+                      ...state.selected,
+                      [action.payload.nivel]: {
+                        ...state.selected[action.payload.nivel],
+                        [action.payload.butaca]: 'noselected'
+                      }
+                    },
+                };
+                }
+        
+                return {
+                  ...state,
+                  selected: {
+                    ...state.selected,
+                    [action.payload.nivel]: {
+                      ...state.selected[action.payload.nivel],
+                      [action.payload.butaca]: 'selected'
+                    }
+                  },
+                  
+                };
+        
+            default:
+              return state;
+          }
+        }
+        
+        export default reducer

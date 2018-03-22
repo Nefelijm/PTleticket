@@ -7,7 +7,7 @@ const Circulo = props => {
       return 'red'
     }
 
-    return 'grey'
+    return '#E7E7DE'
   }
 
   return (
@@ -16,6 +16,11 @@ const Circulo = props => {
     cx={props.cx}
     cy={props.cy}
     fill={selected()}
+    onClick={() => props.onClick({
+        nivel: props.nivel,
+        butaca: props.butaca,
+        precio: props.precio
+      })}
     />
   )
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import NivelUno from './componentes/nivel-uno'
+import NivelUno from './container/nivelUno-container'
 import Escenario from './componentes/escenario'
 import Aside from './componentes/aside'
 import Header from './componentes/header.js'

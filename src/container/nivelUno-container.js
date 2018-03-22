@@ -5,8 +5,8 @@ import { displayButacas, toggleButaca } from '../acciones/accion';
 import NivelUno from '../componentes/nivel-uno';
 
 const mapStateToProps = state => ({
-  niveles: state.teatro.niveles,
-  selected: state.teatro.selected
+  niveles: state.reducer.niveles,
+  selected: state.reducer.selected
 });
 
 const mapDispatchToProps = (dispatch) => ({
