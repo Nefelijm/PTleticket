@@ -25,9 +25,9 @@ const NivelUno = props =>{
         nivel={props.id}//cuantos niveles habra
         display={props.niveles[props.id].display}//para indicar none o block
         elements={props.niveles[props.id].butacas}//para pintar la cantidad de butacas
-        {/* colsPerRow={parseInt(props.niveles[props.id].butacas, 10)/2}/> //divide a las butacas en 2 para hacer dos filas */}
-
-     </svg>
+        colsPerRow={parseInt(props.niveles[props.id].butacas, 10)/2}
+        />    
+        </svg>
     )
 }
 export default NivelUno

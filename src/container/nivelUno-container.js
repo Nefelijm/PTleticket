@@ -1,12 +1,17 @@
-// import NivelUno from '../componentes/nivel-uno'
-// import {connect} from 'react-redux';
-// import  {prueba} from '../acciones/accion1'
-// import { bindActionCreators } from 'redux';
+import { connect } from "react-redux";
+import { bindActionCreators } from 'redux';
 
-//   function mapDispatchToProps (dispatch){
-//     console.log(prueba)
-//     return bindActionCreators({ onClick1 : prueba}, dispatch)
+import { displayButacas, toggleButaca } from '../acciones/accion';
+import NivelUno from '../componentes/nivel-uno';
 
-//   }
+const mapStateToProps = state => ({
+  niveles: state.teatro.niveles,
+  selected: state.teatro.selected
+});
 
-//   export default connect(null,mapDispatchToProps)(NivelUno)
+const mapDispatchToProps = (dispatch) => ({
+  displayButacas: bindActionCreators(displayButacas, dispatch),
+  toggleButaca: bindActionCreators(toggleButaca, dispatch),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(NivelUno);
