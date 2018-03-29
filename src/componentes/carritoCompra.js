@@ -5,18 +5,17 @@ const CarritoCompra = props => {
   return (
     <div style={{
       position: 'absolute',
-      right: '100px',
-      top: '10px',
-      border: '1px solid grey',
-      width: '200px',
+      right: '50px',
+      top: '950px',
+      width: '300px',
       padding: '10px',
-      backgroundColor: 'pink',
+      backgroundColor: '#E7F5F2',
     }}>
-      <h3>Carrito</h3>
+      <h3>Entradas</h3>
       <ul>
         {props.carrito.map((elemento) => {
           total = total + elemento.precio
-          return (<li>{elemento.item}: {elemento.precio}</li>)
+          return (<li>{elemento.item}: {elemento.precio} soles</li>)
         })}
       </ul>
       <hr/>

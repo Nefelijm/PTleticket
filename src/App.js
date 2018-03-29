@@ -18,7 +18,6 @@ const App =() => (
           <NivelUno id={2}/>
           <NivelUno id={3}/>
        </svg> 
-
     </div>
 
 )
