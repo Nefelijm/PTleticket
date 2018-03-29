@@ -1,6 +1,23 @@
 .aside{
-    background-color: #E7E7DE;
-    height: 40vh;
     margin-top: 3%;
-    font-size: 25px;
+    font-size: 19px;
+    float: left;
+    padding: 10px;
    }
+
+ .title {
+    background: #FFDD7E;
+    padding: 30px;
+    font-size: 30px;
+    width: 98.7vw;
+ }  
+
+ .seat {
+     margin-top: 50px;
+     font-size: 25px;
+     background: #11CBD7;
+     padding: 3px;
+     width: 98.7vw;
+     padding-left: 30px;
+     margin-bottom: 30px;
+ }

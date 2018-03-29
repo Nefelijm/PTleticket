@@ -6,7 +6,7 @@ const CarritoCompra = props => {
     <div style={{
       position: 'absolute',
       right: '50px',
-      top: '1700px',
+      top: '1170px',
       width: '300px',
       padding: '10px',
       backgroundColor: '#E7F5F2',

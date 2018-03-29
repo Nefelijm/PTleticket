@@ -52,6 +52,7 @@ const initialState = {
                         [action.payload.butaca]: 'noselected'
                       }
                     },
+                    carrito: state.carrito.filter((elemento) => elemento.id !== `${action.payload.nivel}_${action.payload.butaca}`)
                 };
                 }
         
