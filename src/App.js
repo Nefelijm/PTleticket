@@ -5,11 +5,13 @@ import NivelUno from './container/nivelUno-container'
 import Escenario from './componentes/escenario'
 import Aside from './componentes/aside'
 import Header from './componentes/header.js'
+import CarritoCompra from './container/carritoCompraContainer'
 
 const App =() => (
     <div>
        <Header/> 
        <Aside/>
+       <CarritoCompra />
        <svg className="svg">
           <Escenario/>
           <NivelUno id={1}/>
