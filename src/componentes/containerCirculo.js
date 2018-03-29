@@ -17,6 +17,7 @@ const ContainerCirculo = props => {
         // le pasa las coordenadas al componente Circulo
           cx={cx}
           cy={cy}
+          precio={props.precio}
           selected={props.selected} //select sirve para seleccionar las butacas bien seran red o gray
           nivel={props.nivel} //para indicar en que nivel esta
           butaca={butaca} //para indicar el numero de butaca

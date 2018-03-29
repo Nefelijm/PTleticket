@@ -27,6 +27,7 @@ const NivelUno = props =>{
         display={props.niveles[props.id].display}//para indicar none o block
         elements={props.niveles[props.id].butacas}//para pintar la cantidad de butacas
         colsPerRow={parseInt(props.niveles[props.id].butacas, 10)/2}
+        precio={props.niveles[props.id].precio}
         onClick={props.toggleButaca}
         />    
         </svg>
