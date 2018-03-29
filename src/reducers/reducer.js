@@ -6,19 +6,22 @@ const initialState = {
             
           display:'none', //Esta propiedad permitira poner un display none o block al componente que envuelve a los circulos (containerCirculo)
           butacas: 10,  //Cantidad de butacas que se creeran
+          precio:20,
         },
         2: {
            display:'none',
            butacas: 15, 
+           precio:15
         },
         3: {
            display:'none',
-           butacas: 20, 
+           butacas: 20,
+           precio:10, 
         }
 
     },
-    selected:{}//Este estado cambiara de acuerdo a las butacas que seleccionaremos
-    
+    selected:{},//Este estado cambiara de acuerdo a las butacas que seleccionaremos
+    carrito: []
     }
 
 
@@ -61,8 +64,18 @@ const initialState = {
                       [action.payload.butaca]: 'selected'
                     }
                   },
+                  carrito: [
+                    ...state.carrito,
+                    {
+                      id: `${action.payload.nivel}_${action.payload.butaca}`,
+                      item: `Butaca ${action.payload.butaca} del nivel ${action.payload.nivel}`,
+                      precio: action.payload.precio
+                    },
+                  ]
                   
                 };
+            case 'COMPRAR':
+              return state;
         
             default:
               return state;
