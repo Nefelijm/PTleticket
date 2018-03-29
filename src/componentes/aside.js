@@ -5,7 +5,7 @@ const Aside = () =>(
     <div className = "container-fluid">
        <div className="row">
           <div className="col-12 text-center">
-             <h3>Teatro - Mucho ruido por nada - Corta temporada</h3>
+             <h5>Teatro - Mucho ruido por nada - Corta temporada</h5>
              <img src={teatro}/> 
           </div>
       </div>

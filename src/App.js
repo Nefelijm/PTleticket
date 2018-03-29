@@ -6,10 +6,12 @@ import Escenario from './componentes/escenario'
 import Aside from './componentes/aside'
 import Header from './componentes/header.js'
 import CarritoCompra from './container/carritoCompraContainer'
+import ReactSlickDemo from './componentes/carousel'
 
 const App =() => (
     <div>
        <Header/> 
+       <ReactSlickDemo/> 
        <Aside/>
        <CarritoCompra />
        <svg className="svg">
