@@ -82,8 +82,7 @@ const initialState = {
                 ...state,
                 displayModal:true,
                 comprados:state.carrito,
-                carrito:[],
-                selected:{}
+                carrito:[]
               }
 
              case 'FINALIZAR':
