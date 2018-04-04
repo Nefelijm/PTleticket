@@ -21,7 +21,9 @@ const initialState = {
 
     },
     selected:{},//Este estado cambiara de acuerdo a las butacas que seleccionaremos
-    carrito: []
+    carrito: [],
+    displayModal:false,
+    comprados:[]
     }
 
 
@@ -76,8 +78,21 @@ const initialState = {
                   
                 };
             case 'COMPRAR':
-              return state;
-        
+              return{
+                ...state,
+                displayModal:true,
+                comprados:state.carrito,
+                carrito:[],
+                selected:{}
+              }
+
+             case 'FINALIZAR':
+             return{
+               ... state,
+               displayModal:false,
+               comprados:[]
+             } 
+
             default:
               return state;
           }
