@@ -18,7 +18,7 @@ const CarritoCompra = props => {
       top: '1400px',
       width: '300px',
       padding: '10px',
-      backgroundColor: 'rgb(107, 107, 211)',
+      backgroundColor: '#BCFFA8',
     }}>
 
       <Modal isOpen={props.displayModal} toggle={() => props.finalizarCompra()}>
