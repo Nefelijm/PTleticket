@@ -6,7 +6,7 @@
    }
 
  .title {
-    background: #FFDD7E;
+    background: rgb(252, 172, 52);
     padding: 30px;
     font-size: 30px;
     width: 98.7vw;
@@ -19,5 +19,59 @@
      padding: 3px;
      width: 98.7vw;
      padding-left: 30px;
-     margin-bottom: 30px;
  }
+
+ .ley {   
+    font-size: 25px;
+    background: rgb(98, 201, 178);
+    padding: 3px;
+    width: 100vw;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+.Disponibles{
+    width: 60px;
+    height: 60px;
+    background: white;
+    color: white;
+    margin-right: 3%;
+}
+
+.Ocupados{
+    width: 60px;
+    height: 60px;
+    background: rgb(235, 3, 3);
+    color: rgb(235, 3, 3);
+    margin-right: 3%;
+}
+
+.title-ley {
+    padding: 10px;
+    font-size: 30px;
+    width: 98.7vw;
+ }  
+
+ .pla1{
+    width: 60px;
+    height: 60px;
+    background: #0F3057;
+    color: #0F3057;
+    margin-right: 3%;
+}
+
+.pla2{
+    width: 60px;
+    height: 60px;
+    background: #00587A;
+    color: #00587A;
+    margin-right: 3%;
+}
+
+.pla3{
+    width: 60px;
+    height: 60px;
+    background: #008891;
+    color: #008891;
+    margin-right: 3%;
+}

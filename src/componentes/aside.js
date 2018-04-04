@@ -18,8 +18,28 @@ const Aside = () =>(
           </p>
           </div>
         </div>
-        <div className="row seat">
-          <p>Elige tu asiento!!!!</p>
+        <div>
+          <div className="row seat">
+           <p>Elige tu asiento en La zona que mas prefieras!!!!</p>
+          </div>
+         <div className="row ley">
+            <div className="text-center">
+              <h1 className="title-ley">LEYENDA</h1> 
+            </div>
+            <div className="col-6">
+                <div>
+                  <div><span className="Disponibles">Elig</span>DISPONIBLES</div>
+                  <div><span className="Ocupados">Elig</span>OCUPADOS</div>
+                </div>
+            </div>
+            <div  className="col-6">
+                <div>
+                  <div><span className="pla1">Eligeee</span>PLATEA VIP</div>
+                  <div><span className="pla2">Eligeee</span>PLATEA</div>
+                  <div><span className="pla3">Eligeee</span>PLATEA POSTERIOR</div>
+                </div>           
+            </div>
+         </div>
         </div>
     </div>
 )
